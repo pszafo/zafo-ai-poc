@@ -22,7 +22,7 @@ def close_connection(exception):
 # API endpoint to receive events
 @app.route('/api/events', methods=['POST'])
 def track_event():
-    if request.headers.get('x-api-key')!= 'YOUR_API_KEY':  # API key validation
+    if request.headers.get('x-api-key')!= 'AIzaSyDBoIyDY5SVTImqeGrm97ltFtUFPr6h238':  # API key validation
         return jsonify({'error': 'Unauthorized'}), 401
 
     event_data = request.get_json()
