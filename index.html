@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Zafo.ai POC</title>
+  <script src="zafo.js"></script>
+</head>
+<body>
+  <button id="myButton">Click Me</button>
+
+  <script>
+    zafo.init('YOUR_API_KEY'); // Replace with your actual API key
+    zafo.trackEvent('page_view', { url: window.location.href });
+  </script>
+</body>
+</html>
